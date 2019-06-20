@@ -1,0 +1,5 @@
+1)	Open ATM_googleAPI_final.ipynb and execute this file. The current settings will run 1000 random lat/lon coordinates with a 1000 m radius. This will take ~2 hr to run, so if you do run it, shrink to 10 coordinate pairs and push the radius out to 50000 m. This won’t take long. The program will outfile the results as a csv.
+2)	All the csv files we used are included….
+3)	You would then need to go in and clean this ATM csv file to remove duplicates and to retrieve the zip codes to install into the Census_google_ziplist_final.ipynb. The existing file has a ziplist we installed based on our output. Executing this file will return census data from 2017 as another csv output file.
+4)	The final jupyter notebook, Census_ATM_plot script.ipynb will execute all the images we created, except for the heat map. We ran this on Jamie’s computer as we were unable to get this work on our computers. There are 4 separate csv files we used, modified as needed to run the specific code bits we used. If you execute this notebook with the 4 csv files appropriately positioned you will output all the other images.
+
