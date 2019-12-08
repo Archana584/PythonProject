@@ -48,7 +48,7 @@ Changed the join to add census data into the ATM file, thus eliminating null val
 ## Obervation.
 
 # Majority of ATMs located in zip codes with larger HHI >$100K
-![GitHub Logo](/Bar_Population_ATM.png)
+![GitHub Logo](/Bar_HHI_ATM.png)
 # 60 percent of ATM are in zip codes with populations greater than 40,000 residents
 ![GitHub Logo](/Bar_Population_ATM.png)
 # ATMs located in zip codes with rent between $700-$1150
