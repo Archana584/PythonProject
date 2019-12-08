@@ -11,11 +11,13 @@ Compared relative number of ATMs and contrast that with demographic data. Also e
 1. What is the relationship between median household income, education level and ATM location/number?
 2. What relationships between population density and ATM number?
 3. Are there relationships between ATM use fees and demographic variables?
-4. Are there significant relationshipsbetween a demographic area and the types of ATMs found in that area?
+4. Are there significant relationships between a demographic area and the types of ATMs found in that area?
+5. We wanted to examine the placement of ATM machines in today’s banking landscape.  We wanted to understand who owned them, where they were placed, and what strategies owners use to place ATM machines today.
+6. Who uses them & who owns them?
+7. What can we learn about ATMs?
 
 ## Datasets Used:
-Mastercard’s ATM locator (location API : https://developer.mastercard.com/documentation/locations/1) to access individual ATM
-physical locations (lat/lon and zipcode), access fees, hours of operation, handicap accessibility, and debit card use (cash back).
+Our Data Ultimately Came From US Census and Google API
 
 US Census Bureau (https://www.census.gov/data.html or https://datausa.io/about/datasets) for demographic data for the City of Richmond and surrounding Henrico and Chesterfield counties. We intend to collect data on population density, racial composition, education level, economic status, age, and poverty (for instance).
 
@@ -25,52 +27,46 @@ US Census Bureau (https://www.census.gov/data.html or https://datausa.io/about/d
 1. Get dataset from sources.
 2. Cleaned data.
 3. Breakdown and analyze the dataset.
-4. Get crime rate by dividing crime reported by population for each zip code.
-5. Calculate percent change of crime, population, and median home value.
-6. Find the correlation between percent change of crime, population, and median home value.
+4. Compare relative numbers of ATMs and contrast that with demographic data. 
+5. Examine ATMs in a given geographic area correlated with population density, and other social economic factors. 
+6. Examine various types of ATMs
 7. Graph using matplotlib.
 
-## Make conclusions.
-Questions - Answered
-# 1. Where is crime concentrated in Austin?
+## ATM Data Search Method:
+Pulled 1000 random latitudes and longitudes in the Richmond region
+Used Latitude and Longitude with Google’s API “near by me” to generate ATM name & street addresses
+Google search had a 60 item limit
+Used ATM addresses and Google’s Geo mapping to retrieve zip codes
+First pull was 30 miles – 60 ATMs
+Second pull was 100 3 mile radius pulls – 67 ATMs after dups
+3rd pull was 200 3 mile radius pulls – 67 ATMs (none new)
+4th pull of 1000 (1000 meter) pulls – 147 ATMs – maxing the 60 ATM limit
+Census, pulled 2013-2017 using the same keys, choose to use the most current census data (2017)
+First merged ATM onto the census data ultimately showing numerous null values for missing data
+Changed the join to add census data into the ATM file, thus eliminating null values
+
+## Obervation.
+
+# Majority of ATMs located in zip codes with larger HHI >$100K
 ![GitHub Logo](/Bar_Population_ATM.png)
-2. Where is crime concentrated in Austin?
+# 60 percent of ATM are in zip codes with populations greater than 40,000 residents
 ![GitHub Logo](/Bar_Population_ATM.png)
-3. Where is crime concentrated in Austin?
+# ATMs located in zip codes with rent between $700-$1150
 ![GitHub Logo](/Bar_Population_ATM.png)
-4. Where is crime concentrated in Austin?
+# Owners of ATM in RVA
 ![GitHub Logo](/Bar_Population_ATM.png)
-Downtown has the largest concentration of crime with 8075 reports.
-Crime reports in each zip code do not correlate to population density, as there are certain zip code with a low population but a high number of crime reports, or vice versa.
-There is a high intensity of crime rate per 100,000 people in Downtown and East Austin (78701, 78702, 78703), showing that most crimes occur in this area.
-2. Is there a correlation between housing prices and crime rate?
 
+# Other Observation
+50/50 split between bank and non-bank ATMs.  Expect that we are missing more non-bank owed ATMs than bank owned ATMs.
+There is a major ATM strategy difference between the big banks
+Wells Fargo vs Sun Trust vs. Capital One.
+Wells Fargo has 18 ATMS in the RVA area, compared to 8 and 2 for Sun Trust Bank and Capital One, respectively.
 
-Overall, population and median home cost in Austin increased between 2011 and 2016.
-There appears to be similarities in the rate of increase for both population and median home cost.
-Overall, crime decreased across most of the Austin zip codes.
-There is no visible relationship between the crime and the median home cost.
-3. Which type of crime is prominent in each zip code?
+# Learning and Limitations
+Ensure the data is joined in the right order, eliminating unnecessary nulls
+Be flexible and change approach as needed, data was difficult to get; not convinced we have a complete universe of ATM data
+More time to spend with Master Card and Visa; still convinced this is possible, just not within our time frame or ability at this point
+Relied on ATMs listed in Google;  assume large organizations and a few small entities list their ATMs in google. 
 
-
-
-
-The most common violent crime by zip code is Aggravated Assault.
-The most common non-violent crime by zip code is Theft.
-Exemplary of national statistics that not all sexual assault cases are reported, out of a population of 950,715, only 1,140 cases of Sexual Assault were reported in 2018.
-We extrapolated a few zip codes and noted that there was 254 instances theft in 78613, which is Cedar Park, a zip code spanning Williamson County with a population of over 48,000 people. Given that we have calculated a 14% correlation between population size and crime rate, it stands to reason that population density has no real effect on the amount of crime occurring in a given area.
-4. Does population influence the crime rate in a zip code?
-
-
-There is a weak positive (14%) correlation between population and crime rates.
-Zip codes that are zoned with a lot of commercial areas tend to have low populations with higher reports of crime.
-Conclusions
-Based on the data we have found:
-
-There is no visible relationship between the crime and the median home cost, making it difficult to track neighborhood desirability based solely on property value changes. Despite gentrification in some areas such as 78702--with property values rising to over $200,000 in 2016--the amount of crime in that area remains roughly unchanged since 2016, with 629,616 crime reports filed in 2018.
-To avoid crime the best place to live would be away from Downtown Austin because the most crime concentration is in Downtown.
-While population and median home cost in Austin increased between 2011 and 2016 the crime rate decreased across most of the Austin zip codes.
-Population is not a good indicator of crime because many crimes are committed in commercial areas where not as many people live.
-More investigation needed to determine what might affect the crime rate.
 Disclaimer
 This is not real safety & security advice, it is only based on the data and the results analyzed from the Austin crime data sample from 2011 - 2016.
