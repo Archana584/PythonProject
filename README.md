@@ -32,7 +32,7 @@ US Census Bureau (https://www.census.gov/data.html or https://datausa.io/about/d
 
 ## Make conclusions.
 Questions - Answered
-## 1. Where is crime concentrated in Austin?
+# 1. Where is crime concentrated in Austin?
 ![GitHub Logo](/Bar_Population_ATM.png)
 2. Where is crime concentrated in Austin?
 ![GitHub Logo](/Bar_Population_ATM.png)
