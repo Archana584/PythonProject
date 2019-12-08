@@ -54,7 +54,7 @@ Changed the join to add census data into the ATM file, thus eliminating null val
 # ATMs located in zip codes with rent between $700-$1150
 ![GitHub Logo](/Bar_Population_ATM.png)
 # Owners of ATM in RVA
-![GitHub Logo](/Bar_Population_ATM.png)
+![GitHub Logo](/Bar_long_ATM.png)
 
 # Other Observation
 50/50 split between bank and non-bank ATMs.  Expect that we are missing more non-bank owed ATMs than bank owned ATMs.
