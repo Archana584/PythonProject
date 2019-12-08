@@ -49,6 +49,7 @@ Changed the join to add census data into the ATM file, thus eliminating null val
 
 # Majority of ATMs located in zip codes with larger HHI >$100K
 ![GitHub Logo](/Bar_HHI_ATM.png)
+![GitHub Logo](/Bubbles.png)
 # 60 percent of ATM are in zip codes with populations greater than 40,000 residents
 ![GitHub Logo](/Bar_Population_ATM.png)
 # ATMs located in zip codes with rent between $700-$1150
@@ -63,10 +64,8 @@ Wells Fargo vs Sun Trust vs. Capital One.
 Wells Fargo has 18 ATMS in the RVA area, compared to 8 and 2 for Sun Trust Bank and Capital One, respectively.
 
 # Learning and Limitations
-Ensure the data is joined in the right order, eliminating unnecessary nulls
+Ensure the data is joined in the right order, eliminating unnecessary nulls.
 Be flexible and change approach as needed, data was difficult to get; not convinced we have a complete universe of ATM data
 More time to spend with Master Card and Visa; still convinced this is possible, just not within our time frame or ability at this point
 Relied on ATMs listed in Google;  assume large organizations and a few small entities list their ATMs in google. 
 
-Disclaimer
-This is not real safety & security advice, it is only based on the data and the results analyzed from the Austin crime data sample from 2011 - 2016.
