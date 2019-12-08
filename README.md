@@ -34,7 +34,7 @@ US Census Bureau (https://www.census.gov/data.html or https://datausa.io/about/d
 Questions - Answered
 1. Where is crime concentrated in Austin?
 ###### 1.What is the relationship between median household income, education level and ATM location/number?
-<img src= "/Archana584/PythonProject1/Bar_Population_ATM.png
+<img src= "/Archana584/Bar_Population_ATM.png
 https://github.com/Archana584/PythonProject1/blob/master/Bar_Population_ATM.png
 Downtown has the largest concentration of crime with 8075 reports.
 Crime reports in each zip code do not correlate to population density, as there are certain zip code with a low population but a high number of crime reports, or vice versa.
