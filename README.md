@@ -49,7 +49,6 @@ Changed the join to add census data into the ATM file, thus eliminating null val
 
 # Majority of ATMs located in zip codes with larger HHI >$100K
 ![GitHub Logo](/Bar_HHI_ATM.png)
-![GitHub Logo](/Bubbles.png)
 # 60 percent of ATM are in zip codes with populations greater than 40,000 residents
 ![GitHub Logo](/Bar_Population_ATM.png)
 # ATMs located in zip codes with rent between $700-$1150
@@ -59,8 +58,7 @@ Changed the join to add census data into the ATM file, thus eliminating null val
 
 # Other Observation
 50/50 split between bank and non-bank ATMs.  Expect that we are missing more non-bank owed ATMs than bank owned ATMs.
-There is a major ATM strategy difference between the big banks
-Wells Fargo vs Sun Trust vs. Capital One.
+There is a major ATM strategy difference between the big banks Wells Fargo vs Sun Trust vs. Capital One.
 Wells Fargo has 18 ATMS in the RVA area, compared to 8 and 2 for Sun Trust Bank and Capital One, respectively.
 
 # Learning and Limitations
