@@ -14,21 +14,27 @@ Compared relative number of ATMs and contrast that with demographic data. Also e
 4. Are there significant relationshipsbetween a demographic area and the types of ATMs found in that area?
 
 ## Datasets Used:
-https://www.kaggle.com/zillow/zecon
-https://www.census.gov/developers/
-https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu
-Breakdown of Tasks:
-Get dataset from sources.
-Cleaned data.
-Breakdown and analyze the dataset.
-Get crime rate by dividing crime reported by population for each zip code.
-Calculate percent change of crime, population, and median home value.
-Find the correlation between percent change of crime, population, and median home value.
-Graph using matplotlib.
-Make conclusions.
+Mastercard’s ATM locator (location API : https://developer.mastercard.com/documentation/locations/1) to access individual ATM
+physical locations (lat/lon and zipcode), access fees, hours of operation, handicap accessibility, and debit card use (cash back).
+
+US Census Bureau (https://www.census.gov/data.html or https://datausa.io/about/datasets) for demographic data for the City of Richmond and surrounding Henrico and Chesterfield counties. We intend to collect data on population density, racial composition, education level, economic status, age, and poverty (for instance).
+
+“The census data itself is grouped by geographically by zip code, so we elected to focus on the city of Richmond and surrounding Henrico and Chesterfield counties. In all, we identified 36 non-post office box zip codes, of which 33 returned census data.”
+
+## Breakdown of Tasks:
+1. Get dataset from sources.
+2. Cleaned data.
+3. Breakdown and analyze the dataset.
+4. Get crime rate by dividing crime reported by population for each zip code.
+5. Calculate percent change of crime, population, and median home value.
+6. Find the correlation between percent change of crime, population, and median home value.
+7. Graph using matplotlib.
+
+## Make conclusions.
 Questions - Answered
 1. Where is crime concentrated in Austin?
-
+###### 1.What is the relationship between median household income, education level and ATM location/number?
+<img src= "/
 
 Downtown has the largest concentration of crime with 8075 reports.
 Crime reports in each zip code do not correlate to population density, as there are certain zip code with a low population but a high number of crime reports, or vice versa.
